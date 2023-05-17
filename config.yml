@@ -1,0 +1,158 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: Notary v2
+theme: Universal
+
+paginate: 10
+
+menu:
+  main:
+    - name: Docs
+      url: /docs/
+      weight: 1
+    - name: Blogs
+      url: /blogs/
+      weight: 2
+    - name: Community
+      url: /community/
+      weight: 3
+    - name: Roadmap
+      url: /roadmap/
+      weight: 4
+    - name: Github
+      url: https://github.com/notaryproject/notaryproject.dev
+      weight: 5
+    - name: Twitter
+      url: https://twitter.com/NotaryProject
+      weight: 6
+
+menu.topbar:
+    weight: 1
+    name: Github
+    url:  https://github.com/notaryproject/notaryproject.dev
+    pre: "<i class='fa fa-2x fa-github'></i>"
+
+highlight:
+  codeFences: true
+
+params:
+  viewMorePostLink: "/blogs/"
+  author: "DevCows"
+  defaultDescription: Site ads asdf adsf asdf
+  style: "default"
+  about_us: "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
+  copyright: "Copyright (c) 2015 - 2016, YourCompany; all rights reserved."
+
+params.carousel:
+    enable: true
+
+outputFormats:
+  - name: HTML
+    mediaType: text/html
+    isHTML: true
+    rel: canonical
+  - name: RSS
+    mediaType: application/rss+xml
+    isHTML: false
+    rel: alternate
+    permalinkable: false
+
+disableKinds:
+  - taxonomyTerm
+  - taxonomy
+  - page
+
+
+    
+
+params:
+    disabled_logo: false
+    logo_text: Universal
+
+    logo: "img/notaryLogo.png"
+    logo_small: "img/notaryLogo.png"
+
+    about_us: "<p>Notary is a project that allows anyone to have trust over arbitrary collections of data</p>"
+
+menu.main:
+    name       : "All Pages"
+    identifier : "menu.allpages"
+    url        : "/blogs/"
+    weight     : 4
+
+
+# [[menu.main]]
+#     name       = "Home"
+#     identifier = "section.ap-home"
+#     url        = ""
+#     weight     = 1
+#     parent     = "menu.allpages"
+#     post       = 1
+
+# [[menu.main]]
+#     name       = "Portfolio"
+#     identifier = "section.ap-portfolio"
+#     url        = ""
+#     weight     = 1
+#     parent     = "menu.allpages"
+#     post       = 2
+
+# [[menu.main]]
+#     name       = "Shop"
+#     identifier = "section.ap-shop"
+#     url        = ""
+#     weight     = 1
+#     parent     = "menu.allpages"
+#     post       = 3
+
+# [[menu.main]]
+#     name       = "Blog"
+#     identifier = "section.ap-blog"
+#     url        = ""
+#     weight     = 3
+#     parent     = "menu.allpages"
+#     post       = 4
+
+# [[menu.main]]
+#     name       = "Blog Listing Big"
+#     url        = "/blog/"
+#     weight     = 1
+#     parent     = "section.ap-blog"
+
+
+params.widgets :
+    search: true
+    categories: true
+    tags: true
+
+params.carouselHomepage:
+    enable = true
+    auto_play = true
+    slide_speed = 2000
+    pagination_speed = 1000
+
+params.features:
+    enable = true
+    cols = 3
+
+params.see_more:
+    enable: true
+    icon: "far fa-file-alt"
+    title: "Do you want to see more?"
+    subtitle: "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
+    link_url: "http://your-site.com/more"
+    link_text: "Check other homepages"
+
+
+summaryLength: 70
+
+params.recent_posts:
+    enable: true
+    title: From our blog
+    subtitle: Pellen
+    hide_summary: false
+
+    
+params.footerrecent_posts:
+    enable = true
+
