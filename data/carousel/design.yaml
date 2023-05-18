@@ -1,10 +1,12 @@
 weight: 3
-title: "Design"
+title: "CNCF/Notary "
 description: >
   <ul class="list-style-none">
-    <li>Clean and elegant design</li>
-    <li>Full width and boxed mode</li>
-    <li>Easily readable Roboto font and awesome icons</li>
-    <li>7 preprepared colour variations</li>
+    <li>Contibuted by the community</li>
+    <li>In collaboration with: </li>
+    <li>AWS</li>
+    <li>Dockers</li>
+    <li>Microsoft</li>
+    <li>Cloud Native Community Foundation</li>
   </ul>
 image: "img/carousel/template-easy-customize.png"

@@ -1,0 +1,7 @@
+weight: 4
+name: "Notary Slide 5"
+icon: "fas fa-lightbulb"
+url: ""
+description: "<p><i>Notary v1.0.0-RC.4</i></p>
+<p>Standards-based spec and tooling for securing software supply chains
+Signing and verifying artifacts. <b>Safeguarding the software delivery security from development to deployment.</b></p>"
