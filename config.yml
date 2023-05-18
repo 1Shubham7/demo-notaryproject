@@ -26,11 +26,16 @@ menu:
       url: https://twitter.com/NotaryProject
       weight: 6
 
-menu.topbar:
-    weight: 1
-    name: Github
-    url:  https://github.com/notaryproject/notaryproject.dev
-    pre: "<i class='fa fa-2x fa-github'></i>"
+# menu.topbar:
+#   - weight: 1
+#     name: Github
+#     url: https://github.com/notaryproject/notaryproject.dev
+#     pre: "<i class='fa fa-2x fa-github'></i>"
+
+#   - weight: 2
+#     name: Twitter
+#     url: https://github.com/notaryproject/notaryproject.dev
+#     pre: "<i class='fa fa-2x fa-github'></i>"
 
 highlight:
   codeFences: true
@@ -62,25 +67,87 @@ disableKinds:
   - taxonomy
   - page
 
-
-    
-
 params:
     disabled_logo: false
-    logo_text: Universal
+    logo_text: Notary
 
     logo: "img/notaryLogo.png"
     logo_small: "img/notaryLogo.png"
 
     about_us: "<p>Notary is a project that allows anyone to have trust over arbitrary collections of data</p>"
 
+homeInfoParams:
+  Title: Notary Project
+  Content: this is content
+
+params.topbar:
+  enable: true
+  text: |
+    <p class="hidden-sm hidden-xs">Contact us on +420 777 555 333 or hello@universal.com.</p>
+    <p class="hidden-md hidden-lg">
+      <a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
+      <a href="mailto:hello@universal.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+    </p>
+
+
+params:
+  widgets:
+    categories: true
+    tags: true
+    search: true
+  carouselCustomers:
+    items: 6
+    auto_play: false
+    slide_speed: 2000
+    pagination_speed: 1000
+  carouselTestimonials:
+    items: 4
+    auto_play: false
+    slide_speed: 2000
+    pagination_speed: 1000
+  carouselHomepage:
+    enable: true
+    auto_play: true
+    slide_speed: 2000
+    pagination_speed: 1000
+  features:
+    enable: true
+    cols: 3
+  testimonials:
+    enable: true
+    title: "Testimonials"
+    subtitle: "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+  see_more:
+    enable: true
+    icon: "far fa-file-alt"
+    title: "Do you want to see more?"
+    subtitle: "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
+    link_url: "#"
+    link_text: "Check other homepages"
+  clients:
+    enable: true
+    title: "Our Clients"
+    subtitle: ""
+  recent_posts:
+    enable: true
+    title: "From our blog"
+    subtitle: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+    hide_summary: false
+  footer:
+    recent_posts:
+      enable: true
+taxonomies:
+  category: "categories"
+  tag: "tags"
+  author: "authors"
+
+
+
 # menu.main:
 #     name       : "All Pages"
 #     identifier : "menu.allpages"
 #     url        : "/blogs/"
 #     weight     : 4
-
-
 
 # [[menu.main]]
 #     name       = "Home"
@@ -121,6 +188,7 @@ params:
 #     parent     = "section.ap-blog"
 
 
+
 params.widgets :
     search: true
     categories: true
@@ -133,8 +201,8 @@ params.carouselHomepage:
     pagination_speed = 1000
 
 params.features:
-    enable = true
-    cols = 3
+    enable: true
+    cols: 4
 
 params.see_more:
     enable: true
