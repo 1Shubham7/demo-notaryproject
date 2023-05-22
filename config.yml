@@ -1,4 +1,4 @@
-baseURL: http://example.org/
+baseURL: https://demonotary.netlify.app/
 languageCode: en-us
 title: Notary v2
 theme: Universal
@@ -45,52 +45,12 @@ params:
   author: "DevCows"
   defaultDescription: Site ads asdf adsf asdf
   style: "default"
-  about_us: "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
+  about_us: "<p>The Notary Project is aiming to provide enterprise-grade solutions and cross-industry standards for securing software supply chain</p>"
   copyright: "Copyright (c) 2015 - 2016, YourCompany; all rights reserved."
-
-params.carousel:
-    enable: true
-
-outputFormats:
-  - name: HTML
-    mediaType: text/html
-    isHTML: true
-    rel: canonical
-  - name: RSS
-    mediaType: application/rss+xml
-    isHTML: false
-    rel: alternate
-    permalinkable: false
-
-disableKinds:
-  - taxonomyTerm
-  - taxonomy
-  - page
-
-params:
-    disabled_logo: false
-    logo_text: Notary
-
-    logo: "img/notaryLogo.png"
-    logo_small: "img/notaryLogo.png"
-
-    about_us: "<p>Notary is a project that allows anyone to have trust over arbitrary collections of data</p>"
-
-homeInfoParams:
-  Title: Notary Project
-  Content: this is content
-
-params.topbar:
-  enable: true
-  text: |
-    <p class="hidden-sm hidden-xs">Contact us on +420 777 555 333 or hello@universal.com.</p>
-    <p class="hidden-md hidden-lg">
-      <a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
-      <a href="mailto:hello@universal.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
-    </p>
-
-
-params:
+  disabled_logo: false
+  logo_text: Notary
+  logo: "img/notaryLogo.png"
+  logo_small: "img/notaryLogo.png"
   widgets:
     categories: true
     tags: true
@@ -120,26 +80,60 @@ params:
   see_more:
     enable: true
     icon: "far fa-file-alt"
-    title: "Do you want to see more?"
-    subtitle: "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
-    link_url: "#"
-    link_text: "Check other homepages"
-  clients:
-    enable: true
-    title: "Our Clients"
-    subtitle: ""
+    title: "Do you want to see more from us?"
+    subtitle: "We have blogs and documentation to help you around Notary. Do check them out"
+    link_url: "/blogs"
+    link_text: "Check out blogs"
   recent_posts:
     enable: true
     title: "From our blog"
-    subtitle: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+    subtitle: "The Notary Project is happy to announce the completion of its fuzzing security audit. The audit was carried out by Ada Logics and is part of an initiative by the CNCF to bring fuzzing to the CNCF landscape. The audit spanned several months in late 2022 and early 2023 and resulted in 20 fuzzers written for 3 Notary sub-projects and 2 issues being identified and addressed including a critical security fix."
     hide_summary: false
   footer:
     recent_posts:
-      enable: true
-taxonomies:
-  category: "categories"
-  tag: "tags"
-  author: "authors"
+    enable: true
+  taxonomies:
+    category: "categories"
+    tag: "tags"
+    author: "authors"
+
+params.carousel:
+    enable: true
+
+outputFormats:
+  - name: HTML
+    mediaType: text/html
+    isHTML: true
+    rel: canonical
+  - name: RSS
+    mediaType: application/rss+xml
+    isHTML: false
+    rel: alternate
+    permalinkable: false
+
+disableKinds:
+  - taxonomyTerm
+  - taxonomy
+  - page
+
+
+    
+
+homeInfoParams:
+  Title: Notary Project
+  Content: this is content
+
+params.topbar:
+  enable: true
+  text: |
+    <p class="hidden-sm hidden-xs">Contact us on +420 777 555 333 or hello@universal.com.</p>
+    <p class="hidden-md hidden-lg">
+      <a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
+      <a href="mailto:hello@universal.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+    </p>
+
+
+
 
 
 
